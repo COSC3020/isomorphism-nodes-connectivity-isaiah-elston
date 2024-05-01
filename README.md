@@ -53,8 +53,8 @@ $$
 & |N|_{G_{1}} \equiv |N|_{G_{2}} && \text{\{We assume the number of nodes in each graph is an equivalent value\}}\\\
 \implies & (|N|_{G_{1}}- 1) \equiv (|N|_{G_{2}} - 1) \\
 \implies & |E|_{G_{1}} \equiv |E|_{G_{2}} \\
-\therefore & (|N|_{G_{1}} \equiv |N|_{G_{2}}) \Leftrightarrow (|E|_{G_{1}} \equiv |E|_{G_{2}}) \\
-&& \blacksquare
+\therefore & (|N|_{G_{1}} \equiv |N|_{G_{2}}) \implies (|E|_{G_{1}} \equiv |E|_{G_{2}}) \\
+& \blacksquare
 \end{align*}
 $$
 
