@@ -47,17 +47,15 @@ $$
 Keeping that property in mind, we may now consider the requriements for two graphs to be isomorphic. In layman's terms, two graphs are isomorphic when there exists a bijective mapping between each edge **and** node of both graphs. In order to satisfy the definition of bijective, the mapping must be **both** surjective (onto) and injective (one-to-one). The property above is imperative to generalizing the presence of surjectivity and injectivity, because if we can define the number of edges in a graph in terms of the number of nodes, proving isomorphism becomes nigh trivial to do. Consider the following logic, and keep in mind that **it only follows for completely connected graphs**:
 
 $$
-\begin{gather*}
-
+\begin{align*}
 & |E| = (|N| - 1) && \text{\{The property from above\}} \\
 \implies & (|E|_{G_{1}} \equiv |N|_{G_{1}} - 1) \wedge (|E|_{G_{2}} \equiv |N|_{G_{2}} - 1) \\ \\
 & |N|_{G_{1}} \equiv |N|_{G_{2}} && \text{\{We assume the number of nodes in each graph is an equivalent value\}}\\\
 \implies & (|N|_{G_{1}}- 1) \equiv (|N|_{G_{2}} - 1) \\
 \implies & |E|_{G_{1}} \equiv |E|_{G_{2}} \\
 \therefore & (|N|_{G_{1}} \equiv |N|_{G_{2}}) \Leftrightarrow (|E|_{G_{1}} \equiv |E|_{G_{2}}) \\
-
 && \blacksquare
-\end{gather*}
+\end{align*}
 $$
 
 Which proves that whenever we know the number of nodes ($|N|$) in two **completely-connected** graphs to be equivalent, we can **always** contrive that the number of edges ($|E|$) will also be equivalent.
